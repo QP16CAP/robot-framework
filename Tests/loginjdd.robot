@@ -1,35 +1,29 @@
 *** Settings ***
 Library    SeleniumLibrary
-Library    DataDriver    file=jdd.csv    dialect=excel    encoding=UTF-8    
 Library    ./fct.py
-
-Test Template    Login To Saucedemo
 
 *** Variables ***
 ${URL}        https://www.saucedemo.com/
 ${BROWSER}    firefox
-${username}    username
-${password}    password
-${result}    result
+${CSV_FILE}   jdd.csv
+
 *** Test Cases ***
-Login Test With JDD    ${username}    ${password}    ${result}
+Login Tests
+    ${rows}=    Read Csv Skip Empty    ${CSV_FILE}
+    FOR    ${row}    IN    @{rows}
+
+        Log    Username=${row['username']} | Password=${row['password']} | Expected=${row['result']}
+        Login To Saucedemo    ${row['username']}    ${row['password']}    ${row['result']}
+    END
 
 *** Keywords ***
 Login To Saucedemo
     [Arguments]    ${username}    ${password}    ${result}
-
-
-    ${rows}=    Read Csv Skip Empty    jdd.csv
-    FOR    ${row}    IN    @{rows}
-        Log    Username=${row['username']} | Password=${row['password']} | Expected=${row['result']}
-    END
-
     Open Browser    ${URL}    ${BROWSER}
     Input Text      id=user-name    ${username}
     Input Password  id=password     ${password}
     Click Button    id=login-button
 
-    # Vérifie le résultat attendu
     IF    '${result}' == 'ok'
         Wait Until Location Contains    inventory.html    5s
     ELSE
