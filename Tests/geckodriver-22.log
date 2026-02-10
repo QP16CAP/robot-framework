@@ -1,17 +1,17 @@
-1770718529879	geckodriver	INFO	Listening on 127.0.0.1:59425
-1770718532971	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59426" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MASSIN~1\\AppData\\Local\\Temp\\rust_mozprofileLoaSX4"
+1770721180577	geckodriver	INFO	Listening on 127.0.0.1:61828
+1770721183668	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61829" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MASSIN~1\\AppData\\Local\\Temp\\rust_mozprofilewEaCRb"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
 Dynamically enable window occlusion 0
-1770718533782	Marionette	INFO	Marionette enabled
-1770718534067	Marionette	INFO	Listening on port 65013
-WebDriver BiDi listening on ws://127.0.0.1:59426
-Read port: 65013
-1770718534369	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1770721184449	Marionette	INFO	Marionette enabled
+1770721184694	Marionette	INFO	Listening on port 65318
+WebDriver BiDi listening on ws://127.0.0.1:61829
+Read port: 65318
+1770721184974	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
-console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
-1770718538502	Marionette	INFO	Stopped listening on port 65013
+1770721191916	Marionette	INFO	Stopped listening on port 65318
 Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
 console.error: services.settings: 
   main/fxrelay-allowlist Signature failed  [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no]
 console.error: services.settings: 
@@ -27,4 +27,3 @@ Object
     - result = 2152071198
     - stack = open@resource://gre/modules/ServiceRequest.sys.mjs:126:11|fetch/<@resource://services-settings/Utils.sys.mjs:273:15|fetch@resource://services-settings/Utils.sys.mjs:224:12|validateCollectionSignature@resource://services-settings/RemoteSettingsClient.sys.mjs:1103:49|
   - prototype Object
-console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.

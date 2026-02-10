@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.12 on win32)" generated="2026-02-10T11:56:36.717184" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot Framework" source="C:\Users\Massinissa TAIBI\Desktop\robot framework">
+<suite id="s1-s1" name="Tests" source="C:\Users\Massinissa TAIBI\Desktop\robot framework\Tests">
+<suite id="s1-s1-s1" name="Testjddd" source="C:\Users\Massinissa TAIBI\Desktop\robot framework\Tests\testjddd.robot">
+<test id="s1-s1-s1-t1" name="Login Tests" line="5">
+<kw name="Read Csv Skip Empty" owner="fct">
+<msg time="2026-02-10T11:56:36.829417" level="FAIL">FileNotFoundError: [Errno 2] No such file or directory: 'jdd.csv'</msg>
+<var>${rows}</var>
+<arg>jdd.csv</arg>
+<doc>Lit un CSV et ignore les lignes où une colonne est vide.
+Retourne une liste de dictionnaires (ou listes) pour Robot Framework.</doc>
+<status status="FAIL" start="2026-02-10T11:56:36.828850" elapsed="0.013430">FileNotFoundError: [Errno 2] No such file or directory: 'jdd.csv'</status>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<arg>Username=${row['username']} | Password=${row['password']} | Expected=${row['result']}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-10T11:56:36.843613" elapsed="0.000169"/>
+</kw>
+<var name="${row}"/>
+<status status="NOT RUN" start="2026-02-10T11:56:36.843353" elapsed="0.000532"/>
+</iter>
+<var>${row}</var>
+<value>@{rows}</value>
+<status status="NOT RUN" start="2026-02-10T11:56:36.842896" elapsed="0.001048"/>
+</for>
+<status status="FAIL" start="2026-02-10T11:56:36.822542" elapsed="0.021702">FileNotFoundError: [Errno 2] No such file or directory: 'jdd.csv'</status>
+</test>
+<status status="FAIL" start="2026-02-10T11:56:36.812747" elapsed="0.038479"/>
+</suite>
+<status status="FAIL" start="2026-02-10T11:56:36.807974" elapsed="0.048374"/>
+</suite>
+<status status="FAIL" start="2026-02-10T11:56:36.750667" elapsed="0.111148"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot Framework" id="s1" pass="0" fail="1" skip="0">Robot Framework</stat>
+<stat name="Tests" id="s1-s1" pass="0" fail="1" skip="0">Robot Framework.Tests</stat>
+<stat name="Testjddd" id="s1-s1-s1" pass="0" fail="1" skip="0">Robot Framework.Tests.Testjddd</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

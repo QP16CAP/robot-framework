@@ -1,16 +1,15 @@
-1770718529879	geckodriver	INFO	Listening on 127.0.0.1:59425
-1770718532971	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59426" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MASSIN~1\\AppData\\Local\\Temp\\rust_mozprofileLoaSX4"
+1770718560459	geckodriver	INFO	Listening on 127.0.0.1:49677
+1770718563544	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49678" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MASSIN~1\\AppData\\Local\\Temp\\rust_mozprofile52rcoP"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
 Dynamically enable window occlusion 0
-1770718533782	Marionette	INFO	Marionette enabled
-1770718534067	Marionette	INFO	Listening on port 65013
-WebDriver BiDi listening on ws://127.0.0.1:59426
-Read port: 65013
-1770718534369	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1770718564313	Marionette	INFO	Marionette enabled
+1770718564617	Marionette	INFO	Listening on port 49685
+WebDriver BiDi listening on ws://127.0.0.1:49678
+Read port: 49685
+1770718564893	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
-console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
-1770718538502	Marionette	INFO	Stopped listening on port 65013
+1770718568757	Marionette	INFO	Stopped listening on port 49685
 Dynamically enable window occlusion 1
 console.error: services.settings: 
   main/fxrelay-allowlist Signature failed  [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no]

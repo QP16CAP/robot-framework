@@ -1,0 +1,10 @@
+*** Test Cases ***,username,password,result
+Case1,standard_user,secret_sauce,ok
+Case2,problem_user,secret_sauce,ok
+Case3,,secret_sauce,ko
+
+
+
+Case3,performance_glitch_user,secret_sauce,ok
+Case4,locked_out_user,secret_sauce,ko
+Case5,syzdy,secret_sauce,ko
